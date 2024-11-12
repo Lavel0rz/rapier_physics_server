@@ -1,0 +1,16 @@
+[package]
+name = "my_physics_server"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+warp = "0.3"
+tokio = { version = "1", features = ["full"] }
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+rand = "0.8"
+rapier2d = { version = "0.17", features = ["serde"] } # Make sure to use the correct version
+futures-util = "0.3"  # Or the latest version
+parry2d = "0.3"
+tokio-tungstenite = "0.20"
+rusqlite = { version = "0.28.0", features = ["bundled"] }
